@@ -1,7 +1,5 @@
 li a {
     color: green;
-}
+    justify-content: center;
 
-body {
-    background: white url("images/background.gif") no-repeat;
 }
