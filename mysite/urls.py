@@ -8,6 +8,7 @@ from home import views
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('/', admin.site.urls),
     path('', views.home_view, name='home'),
 
     
