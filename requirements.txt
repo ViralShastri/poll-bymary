@@ -39,3 +39,6 @@ whichcraft==0.6.1
 whitenoise==5.2.0
 zope.event==4.4
 zope.interface==5.1.0
+Django
+gunicorn
+django-heroku
