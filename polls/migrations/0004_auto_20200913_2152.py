@@ -30,8 +30,8 @@ class Migration(migrations.Migration):
             name='post',
         ),
         migrations.AddField(
-            model_name='comments',
-            name='add',
+            model_name='comment',
+            name='commentId',
             field=models.AutoField(default=1, max_length=12, primary_key=True, serialize=False),
             preserve_default=False,
         ),
