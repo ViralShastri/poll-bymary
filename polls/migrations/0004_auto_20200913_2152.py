@@ -31,7 +31,6 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             id = models.BigIntegerField(primary_key = True)
-            model_name='comment',
             name='id',
             field=models.AutoField(default=1, max_length=12, primary_key=True, serialize=False),
             preserve_default=False,
