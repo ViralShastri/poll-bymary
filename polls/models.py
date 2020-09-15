@@ -43,7 +43,6 @@ class Post(models.Model):
         return self.title
 
 class Comment(models.Model):
-    id = models.BigIntegerField(primary_key = True)
     post = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='comments')
     author = models.CharField(max_length=200)
     text = models.TextField()
