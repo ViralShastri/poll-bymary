@@ -1,1 +1,1 @@
-web: gunicorn django-HasanMukati-master.wsgi
+web: gunicorn django-HasanMukati.wsgi
