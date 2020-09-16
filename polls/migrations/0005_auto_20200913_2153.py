@@ -13,10 +13,13 @@ class Migration(migrations.Migration):
         migrations.DeleteModel(
             name='DSComment',
         ),
-        
+        migrations.RemoveField(
+            model_name='comment',
+            name='commentId',
+        ),
         migrations.AddField(
             model_name='comment',
-            name='addid',
+            name='id',
             field=models.AutoField(auto_created=True, default=1, primary_key=True, serialize=False, verbose_name='ID'),
             preserve_default=False,
         ),
