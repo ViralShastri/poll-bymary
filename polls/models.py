@@ -3,7 +3,7 @@ from django.db import models
 from django.utils import timezone
 
 class Question(models.Model):
-    id = models.IntegerField()
+    id = models.IntegerField(primary_key=True)
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
     notMuchVotes = models.IntegerField(null=True)
@@ -22,7 +22,7 @@ class Question(models.Model):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 class Choice(models.Model):
-    id = models.IntegerField()
+    id = models.IntegerField(primary_key=True)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
@@ -31,7 +31,7 @@ class Choice(models.Model):
         return self.choice_text
         
 class Post(models.Model):
-    id = models.IntegerField()
+    id = models.IntegerField(primary_key=True)
     author = models.ForeignKey(Question, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
@@ -46,7 +46,7 @@ class Post(models.Model):
         return self.title
 
 class Comment(models.Model):
-    id = models.IntegerField()
+    id = models.IntegerField(primary_key=True)
     post = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='comments')
     author = models.CharField(max_length=200)
     text = models.TextField()
