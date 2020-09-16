@@ -34,9 +34,7 @@ class Migration(migrations.Migration):
             name='cId',
             fields=[
                 ('name', models.CharField(max_length=12)),
-                ('comments', models.TextField()),
-                ('created_at', models.DateTimeField(default=django.utils.timezone.now)),
-                ('status', models.BooleanField(default=False)),
+                ('comment', models.TextField()),
             ],
         ),  
     ]
