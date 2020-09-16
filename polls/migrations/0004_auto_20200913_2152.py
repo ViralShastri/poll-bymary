@@ -32,6 +32,11 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='comment',
             name='cId',
-            field=models.AutoField(default=1, max_length=12),
+            fields=[
+                ('name', models.CharField(max_length=12)),
+                ('comments', models.TextField()),
+                ('created_at', models.DateTimeField(default=django.utils.timezone.now)),
+                ('status', models.BooleanField(default=False)),
+            ],
         ),  
     ]
