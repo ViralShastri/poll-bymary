@@ -32,5 +32,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='comment',
             name='cId',
-        ),
+            field=models.AutoField(default=1, max_length=12),
+        ),  
     ]
