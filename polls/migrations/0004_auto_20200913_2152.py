@@ -33,8 +33,7 @@ class Migration(migrations.Migration):
             model_name='comment',
             name='cId',
             fields=[
-                ('name', models.CharField(max_length=12)),
-                ('comment', models.TextField()),
+                (models.CharField(max_length=12)),
             ],
         ),  
     ]
