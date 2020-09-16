@@ -54,7 +54,7 @@ background-color: rgba(161, 174, 190, 0.938)
             </tr>
             </thead>
             <tbody>
-            
+            {% for getN in comments %}
             <tr>
               <td googl="true">{{getN.author}}</td>
               <td>{{getN.text}}</td>
