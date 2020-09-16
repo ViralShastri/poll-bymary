@@ -21,17 +21,5 @@ class Migration(migrations.Migration):
                 ('status', models.BooleanField(default=False)),
             ],
         ),
-        migrations.RemoveField(
-            model_name='comment',
-            name='id',
-        ),
-        migrations.RemoveField(
-            model_name='comment',
-            name='post',
-        ),
-        migrations.AddField(
-            model_name='comment',
-            name='cId',
-             field=models.AutoField(max_length=12),
-        ),  
+       
     ]
