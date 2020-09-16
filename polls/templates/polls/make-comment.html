@@ -52,7 +52,7 @@ background-color: rgba(161, 174, 190, 0.938)
                 <label for="exampleInputEmail1">Post</label>
                 <select name="post" id="">
                     <option value="">Select Post</option>
-                    {% for getN in posts %}//
+                    {% for getN in posts %}
                     <option value="{{getN.id}}">{{getN.question_text}}</option>
                     {% endfor %}
                 </select>
